@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
 * main - Entry point
@@ -16,7 +14,7 @@ int main(void)
 	{
 		printf("%d", i);
 	}
-	putchar("\n");
+	printf("\n");
 
 	return (0);
 }
