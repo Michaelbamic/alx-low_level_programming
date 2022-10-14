@@ -10,11 +10,13 @@
 
 int main(void)
 {
-	char low;
+	char alp[26] = "zyxwvutsrqponmlkjihgfedcba";
+	int i;
 
-	for (low = 'z'; low >= 'a'; low--)
-		putchar(low);
-		putchar('\n')
-
+	for (i = 0; i < 26; i++)
+	{
+		putchar(alp[i]);
+	}
+	putchar('\n');
 	return (0);
 }
