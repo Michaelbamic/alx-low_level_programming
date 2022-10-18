@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * _islower - check Main
- * @c - an input character
- * return - 1 if is a lowercase or 0 if is a uppercse
+ * _islower - Check Main
+ * @c: An input character
+ * Description: function uses _putchar function to print
+ * alphabet in lowercase 10 times
+ * Return: 1 if is a lowercase or 0 if is a uppercse
  */
 int _islower(int c)
 {

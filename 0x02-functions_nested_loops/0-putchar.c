@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * main - check description
- * descriptions - it prints the word _putchar, followed by a new line
- * return: 0.
+ * main - Check Description
+ * Description: It prints the word _putchar, followed by a new line
+ * Return: 0.
  */
 
 int main(void)
