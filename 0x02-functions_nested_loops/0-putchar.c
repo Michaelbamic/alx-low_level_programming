@@ -6,6 +6,7 @@
  * descriptions - it prints the word _putchar, followed by a new line
  * return: 0.
  */
+
 int main(void)
 {
 	char word[8] = "_putchar";
