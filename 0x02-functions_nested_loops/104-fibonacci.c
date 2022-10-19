@@ -32,7 +32,7 @@ void print_fibonacci(int i)
 
 	printf("%ld, %ld, ", p, l);
 
-	for (a = 3; a < 89; a++)
+	for (a = 0; a < 98; a++)
 	{
 		b = p + 1;
 
