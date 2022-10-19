@@ -51,7 +51,7 @@ void print_fibonacci(int i)
 
 	for (a = 89; a < i; a++)
 	{
-		printf"(%ld%ld, ", fb, lb);
+		printf("%ld%ld, ", fb, lb);
 
 		a = fl;
 		l = ll;
@@ -60,5 +60,5 @@ void print_fibonacci(int i)
 		fb = p + fl + ((l + ll) / 1000000000);
 		lb = (l + ll) % 1000000000;
 	}
-	printf("%ld%ld\n, ", fb, lb);
+	printf("%ld%ld\n", fb, lb);
 }
