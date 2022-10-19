@@ -25,40 +25,40 @@ int main(void)
  */
 void print_fibonacci(int i)
 {
-	int x;
-	long int y, fb, lb, fl, ll;
+	int a;
+	long int b, fb, lb, fl, ll;
 	long int l = 2;
-	long int z = 1;
+	long int p = 1;
 
-	printf("%ld, %ld, ", z, l);
+	printf("%ld, %ld, ", p, l);
 
-	for (x = 3; x < 89; x++)
+	for (a = 3; a < 89; a++)
 	{
-		y = z + 1;
+		b = p + 1;
 
 		printf("%ld, ", b);
 
-		z = 1;
-		l = y;
+		p = 1;
+		l = b;
 	}
 
-	y = z + 1;
+	b = p + 1;
 
 	fl = l / 1000000000;
 	ll = l % 1000000000;
-	fb = y / 1000000000;
-	lb = y % 1000000000;
+	fb = b / 1000000000;
+	lb = b % 1000000000;
 
-	for (x = 89; x < i; x++)
+	for (a = 89; a < i; a++)
 	{
 		printf"(%ld%ld, ", fb, lb);
 
-		z = fl;
+		a = fl;
 		l = ll;
 		fl = fb;
 		ll = lb;
-		fb = z + fl + ((l + ll) / 1000000000);
+		fb = p + fl + ((l + ll) / 1000000000);
 		lb = (l + ll) % 1000000000;
 	}
-	printf("%ld%ld, ", fb, lb);
+	printf("%ld%ld\n, ", fb, lb);
 }
