@@ -38,11 +38,11 @@ void print_fibonacci(int i)
 
 		printf("%ld, ", b);
 
-		p = 1;
+		p = l;
 		l = b;
 	}
 
-	b = p + 1;
+	b = p + l;
 
 	fl = l / 1000000000;
 	ll = l % 1000000000;
