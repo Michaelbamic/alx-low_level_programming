@@ -49,7 +49,7 @@ void print_fibonacci(int i)
 	fb = b / 1000000000;
 	lb = b % 1000000000;
 
-	for (a = 89; a < i; a++)
+	for (a = 98; a < i; a++)
 	{
 		printf("%ld%ld, ", fb, lb);
 
