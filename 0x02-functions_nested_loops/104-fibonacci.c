@@ -1,52 +1,64 @@
 #include <stdio.h>
 #include "main.h"
 
+void print_fibonacci(int);
+
 /**
- * main - Prints the first 89 Fibonacci numbers
+ * main - call print_fibonacci
  *
- * Return: Always 0.
+ * Return: returns  0.
  *
  */
 int main(void)
 {
-	int c, boolean, boolean2;
-	long int n1, n2, fn, fn2, n11, n22;
+	int n = 98;
 
-	n1 = 1;
-	n2 = 2;
-	boolean =  boolean2 = 1;
-	printf("%ld, %ld", n1, n2);
-	for (c = 0; c < 89; c++)
-	{
-		if (boolean)
-		{
-			fn = n1 + n2;
-			printf(", %ld", fn);
-			n1 = n2;
-			n2 = fn;
-		}
-		else
-		{
-			if (boolean2)
-			{
-				n11 = n1 % 1000000000;
-				n22 = n2 % 1000000000;
-				n1 = n1 / 1000000000;
-				n2 = n2 / 1000000000;
-				boolean2 = 0;
-			}
-			fn2 = (n11 + n22);
-			fn = n1 + n2 + (fn2 / 1000000000);
-			printf(", %ld", fn);
-			rintf("%ld", fn2 % 1000000000);
-			n1 = n2;
-			n11 = n22;
-			n2 = fn;
-			n22 = (fn2 % 1000000000);
-		}
-		if (((n1 + n2) < 0) && boolean == 1)
-			boolean = 0;
-	}
-	printf("\n");
+	print_fibonacci(n);
+
 	return (0);
+}
+/**
+ * print_fibonacci - prints fibonacci numbers
+ * @i: an input number
+ *
+ * Return: returns nothing
+ */
+void print_fibonacci(int i)
+{
+	int x;
+	long int y, fb, lb, fl, ll;
+	long int l = 2;
+	long int z = 1;
+
+	printf("%ld, %ld, ", z, l);
+
+	for (x = 3; x < 89; x++)
+	{
+		y = z + 1;
+
+		printf("%ld, ", b);
+
+		z = 1;
+		l = y;
+	}
+
+	y = z + 1;
+
+	fl = l / 1000000000;
+	ll = l % 1000000000;
+	fb = y / 1000000000;
+	lb = y % 1000000000;
+
+	for (x = 89; x < i; x++)
+	{
+		printf"(%ld%ld, ", fb, lb);
+
+		z = fl;
+		l = ll;
+		fl = fb;
+		ll = lb;
+		fb = z + fl + ((l + ll) / 1000000000);
+		lb = (l + ll) % 1000000000;
+	}
+	printf("%ld%ld, ", fb, lb);
 }
