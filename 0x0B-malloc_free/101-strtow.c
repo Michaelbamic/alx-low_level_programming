@@ -56,7 +56,8 @@ char **strtow(char *str)
 			}
 		}
 		for (j = 0; k <= c; k++, j++)
-			new[i][j] = '\0';
+			new[i][j] = str[k];
+		new[i][j] = '\0';
 	}
 	new[i] = NULL;
 	return (new);
