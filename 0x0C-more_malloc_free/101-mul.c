@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - check the code
  * @argc: number of arguments
@@ -15,7 +16,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
-	if((!isdigit(argv[1])) && (!isdigit(argv[2])))
+	else if((!isdigit(argv[1])) && (!isdigit(argv[2])))
 	{
 		printf("Error\n");
 		exit(98);
