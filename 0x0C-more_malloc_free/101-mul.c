@@ -15,6 +15,10 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
+	if((!isdigit(argv[1])) && (!isdigit(argv[2])))
+	{
+		printf("Error\n");
+		exit(98);
 	else
 	{
 		num1 = atoi(argv[1]);
