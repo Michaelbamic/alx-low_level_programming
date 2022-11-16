@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-	char *opc = (char *) main;
+	unsigned char *opc;
 	int i, nbytes;
 
 	if (argc != 2)
@@ -25,13 +25,13 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	for (i = 0; i < nbytes; i++)
+	opc = (unsigned char *)main;
+	i = 0;
+	if (nbytes > 0)
 	{
-		printf("%02x", opc[i] & 0xFF);
-		if (i != nbytes - 1)
-			printf(" ");
+		while (i < (nbytes - 1))
+			printf("%02hhx ", opc[i++]);
+		printf("%hhx\n", opc[i]);
 	}
-
-	printf("\n");
 	return (0);
 }
