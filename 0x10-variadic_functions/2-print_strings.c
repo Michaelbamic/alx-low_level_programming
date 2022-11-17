@@ -5,7 +5,7 @@
  * @n: number of strings passed to the function
  * Return: no return
  */
-void print_strings(const charrrrr *seperator, const unsigned int n, ...)
+void print_strings(const char *seperator, const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i;
