@@ -5,7 +5,7 @@
  * @head: head of a list
  * Return: no return
  */
-void free_listp(list_t **head)
+void free_listp(listp_t **head)
 {
 	listp_t *temp;
 	listp_t *curr;
@@ -29,7 +29,7 @@ void free_listp(list_t **head)
  */
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t newnodes = o;
+	size_t newnodes = 0;
 	listp_t *ast, *new, *add;
 
 	ast = NULL;
