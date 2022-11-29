@@ -24,10 +24,10 @@ void free_listp2(listp_t **head)
 
 /**
  * free_listint_safe - frees a linked list
- * @head: head of a list
+ * @h: head of a list
  * Return: size of the list that was freed
  */
-size_t free_listint_safe(const listint_t **h)
+size_t free_listint_safe(listint_t **h)
 {
 	size_t newnodes = 0;
 	listp_t *ast, *new, *add;
@@ -35,14 +35,14 @@ size_t free_listint_safe(const listint_t **h)
 
 
 	ast = NULL;
-	while (h != NULL)
+	while (*h != NULL)
 	{
 		new = malloc(sizeof(listp_t));
 
 		if (new == NULL)
 			exit(98);
 
-		new->p = (void *)h;
+		new->p = (void *)*h;
 		new->next = ast;
 		ast = new;
 
@@ -51,7 +51,7 @@ size_t free_listint_safe(const listint_t **h)
 		while (add->next != NULL)
 		{
 			add = add->next;
-			if (h == add->p)
+			if (*h == add->p)
 			{
 				*h = NULL;
 				free_listp2(&ast);
