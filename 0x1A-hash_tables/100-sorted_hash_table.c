@@ -8,7 +8,7 @@
 shash_table_t *shash_table_create(unsigned long int size)
 {
 	shash_table_t *table;
-	shash_table_t **array;
+	shash_node_t **array;
 	unsigned long int i;
 
 	table = malloc(sizeof(shash_table_t));
@@ -123,7 +123,7 @@ void add_i_shash(shash_table_t *ht, shash_node_t *new)
  * @value: value to store
  * Return: 1 if success, o if fails
  */
-int shash_table_set(shash_table_t *ht, const char *key, const char **value)
+int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int k_index;
 	shash_node_t *new;
